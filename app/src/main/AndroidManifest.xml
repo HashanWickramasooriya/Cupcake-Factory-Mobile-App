@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cupcake_factory">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/CupCake_Factory"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cupcake_factory"
+        tools:targetApi="31">
+
+        <!-- Main activity with launcher intent filter -->
+        <activity android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities -->
+        <activity android:name=".DashboardActivity" android:exported="true"/>
+        <activity android:name=".AdminLoginActivity" android:exported="true"/>
+        <activity android:name=".AdminDashboardActivity" android:exported="true"/>
+        <activity android:name=".CreateCategoriesActivity" android:exported="true"/>
+        <activity android:name=".CreateCupcakesActivity" android:exported="true"/>
+        <activity android:name=".ManageCategoriesActivity" android:exported="true"/>
+        <activity android:name=".EditCategoryActivity" android:exported="true"/>
+        <activity android:name=".EditCupcakeActivity" android:exported="true"/>
+        <activity android:name=".ManageCupcakesActivity" android:exported="true"/>
+        <activity android:name=".ViewOrdersActivity" android:exported="true"/>
+        <activity android:name=".MemberLoginActivity" android:exported="true"/>
+        <activity android:name=".MemberSignupActivity" android:exported="true"/>
+        <activity android:name=".MemberHomeActivity" android:exported="true"></activity>
+        <activity android:name=".CupcakeListActivity" android:exported="true"></activity>
+        <activity android:name=".PlaceOrderActivity" android:exported="true"></activity>
+        <activity android:name=".ContactUsActivity" android:exported="true"/>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

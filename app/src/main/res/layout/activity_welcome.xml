@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+
+    <!-- Welcome Text -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/aclonica"
+        android:text="Welcome to Cupcake Factory!"
+        android:textAlignment="center"
+        android:textColor="#8F235D"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF4081"
+        android:elevation="4dp"
+        android:text="Next"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

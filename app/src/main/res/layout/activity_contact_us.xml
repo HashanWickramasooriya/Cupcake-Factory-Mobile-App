@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapercontactus"
+    tools:context=".ContactUsActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="265dp"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="@font/aladin"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        android:textColor="#880E4F"
+        android:textSize="44sp"
+        android:textStyle="bold" />
+
+    <!-- EditText for Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Name"
+        android:minHeight="48dp"
+        android:textColorHint="#880E4F"
+        android:textColor="#000000" />
+
+    <!-- EditText for Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#880E4F"
+        android:textColor="#000000" />
+
+    <!-- EditText for Message -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Message"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:textColorHint="#880E4F"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="156dp"
+        android:backgroundTint="#880E4F"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

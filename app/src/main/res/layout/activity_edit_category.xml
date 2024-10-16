@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper8" />
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/aladin"
+        android:text="Edit Category"
+        android:textColor="#880E4F"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- Category Name Input -->
+    <EditText
+        android:id="@+id/categoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#8F235D"
+        android:hint="Category Name"
+        android:drawableTint="#171616"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Category Description Input -->
+    <EditText
+        android:id="@+id/categoryDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryName"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#8F235D"
+        android:hint="Category Description"
+        android:drawableTint="#171616"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/updateCategoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Update Category"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081" />
+
+</RelativeLayout>

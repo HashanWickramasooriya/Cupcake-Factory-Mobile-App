@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpapermc" />
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aladin"
+        android:text="Manage Categories"
+        android:textAlignment="center"
+        android:textColor="#F4E0EB"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- ListView to display categories -->
+    <ListView
+        android:id="@+id/categoriesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerText"
+        android:textColor="#A14A031B"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:dividerHeight="1dp" />
+
+    <!-- Button to add new category -->
+    <Button
+        android:id="@+id/addCategoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoriesListView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add Category"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081" />
+</RelativeLayout>

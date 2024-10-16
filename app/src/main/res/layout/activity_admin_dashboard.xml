@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper4" />
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/adminDashboardHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/aladin"
+        android:text="Welcome to Admin Dashboard"
+        android:textAlignment="center"
+        android:textColor="#6C083D"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Create New Categories Button -->
+    <Button
+        android:id="@+id/createCategoriesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Categories"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/adminDashboardHeading"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- Create New Cupcakes Button -->
+    <Button
+        android:id="@+id/createCupcakesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Cupcakes"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/createCategoriesButton"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- Manage Categories and Cupcakes Button -->
+    <Button
+        android:id="@+id/manageCategoriesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Categories "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/createCupcakesButton"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- Manage Cupcakes Button -->
+    <Button
+        android:id="@+id/manageCupcakesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Cupcakes"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/manageCategoriesButton"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- View and Process Orders Button -->
+    <Button
+        android:id="@+id/viewOrdersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View and Process Orders"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/manageCupcakesButton"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOrdersButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#880E4F"
+        android:elevation="4dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

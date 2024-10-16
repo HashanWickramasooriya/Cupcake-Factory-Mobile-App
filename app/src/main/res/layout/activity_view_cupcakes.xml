@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCupcakesActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper1" />
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Available Cupcake"
+        android:textColor="#880E4F"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- ListView to display cupcakes -->
+    <ListView
+        android:id="@+id/cupcakesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerText"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:divider="@color/black"
+        android:dividerHeight="1dp" />
+</RelativeLayout>

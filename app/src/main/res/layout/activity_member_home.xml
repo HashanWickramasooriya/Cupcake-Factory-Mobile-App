@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberHomeActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper6" />
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aladin"
+        android:text="Member Dashboard"
+        android:textColor="#880E4F"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- View Cupcakes Button -->
+
+    <Button
+        android:id="@+id/viewCupcakesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:backgroundTint="#FF4081"
+        android:padding="16dp"
+        android:text="View Cupcakes"
+        android:textSize="20sp" />
+
+    <!-- Place Order Button -->
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewCupcakesButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF4081"
+        android:padding="16dp"
+        android:text="Place Order"
+        android:textSize="20sp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeOrderButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C8FF4081"
+        android:padding="14dp"
+        android:text="Logout"
+        android:textSize="20sp" />
+
+</RelativeLayout>

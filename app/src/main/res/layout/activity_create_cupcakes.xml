@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+
+    <!-- Heading: Add New Cupcake -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper3" />
+
+    <TextView
+        android:id="@+id/addNewCupcakeHeading"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/aladin"
+        android:text="Add New CupCake"
+        android:textAlignment="center"
+
+        android:textColor="#880E4F"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- Cupcake Name Input -->
+    <EditText
+        android:id="@+id/cupcakeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addNewCupcakeHeading"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:textColorHint="#A14A031B"
+        android:backgroundTint="#8F235D"
+        android:hint="Cupcake Name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Cupcake Description Input -->
+    <EditText
+        android:id="@+id/cupcakeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcakeName"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textColorHint="#A14A031B"
+        android:backgroundTint="#8F235D"
+        android:hint="Cupcake Description"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Cupcake Price Input -->
+    <EditText
+        android:id="@+id/cupcakePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcakeDescription"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textColorHint="#A14A031B"
+        android:backgroundTint="#8F235D"
+        android:hint="Cupcake Price"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:inputType="numberDecimal" />
+
+    <!-- Select Image Button -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcakePrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Select Image"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081" />
+
+    <!-- Selected Image Preview -->
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/selectImageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitCupcakeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Create Cupcake"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081" />
+
+</RelativeLayout>

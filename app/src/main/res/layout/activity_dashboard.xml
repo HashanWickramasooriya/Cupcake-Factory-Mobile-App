@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper10" />
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Admin Button -->
+        <Button
+            android:id="@+id/adminButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <!-- Member Button -->
+        <Button
+            android:id="@+id/memberButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <!-- Contact Us Button -->
+        <Button
+            android:id="@+id/contactUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

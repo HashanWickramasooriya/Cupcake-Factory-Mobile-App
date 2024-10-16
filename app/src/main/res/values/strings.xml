@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CupCake_Factory</string>
+    <string name="manage_categories_title">Manage Categories</string>
+    <string name="category_name_hint">Enter category name</string>
+    <string name="add_category">Add Category</string>
+    <string name="CupCake_Factory">CupCake Factory</string>
+</resources>

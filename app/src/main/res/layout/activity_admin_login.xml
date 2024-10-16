@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/adminwallpaper" />
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/adminLoginHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aladin"
+        android:text="Admin Login"
+        android:textAlignment="center"
+        android:textColor="#880E4F"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <!-- Admin Name Input -->
+    <EditText
+        android:id="@+id/adminName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminLoginHeading"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#A14A031B"
+        android:backgroundTint="#8F235D"
+        android:hint="Admin Name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#A14A031B"
+        android:backgroundTint="#8F235D"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <!-- Show Password Checkbox -->
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Show Password"
+        android:textColor="#8F235D" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF" />
+
+    <!-- Error Message Text -->
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#880E4F"
+        android:visibility="gone" />
+
+</RelativeLayout>
